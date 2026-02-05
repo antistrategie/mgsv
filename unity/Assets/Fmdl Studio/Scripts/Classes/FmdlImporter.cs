@@ -191,11 +191,12 @@ namespace FmdlStudio.Scripts.Classes
                     name = Hashing.TryGetPathName(fmdl.fmdlPathCode64s[fmdlTexture.pathIndex]) + ".dds";
 
                 //Read the file.
-                if (File.Exists($"{Globals.GetTexturePath()}\\{name}"))
-                    textures[i] = LoadTextureDXT($"{Globals.GetTexturePath()}\\{name}");
+                string texturePath = Path.Combine(Globals.GetTexturePath(), name.TrimStart('/', '\\').Replace('/', Path.DirectorySeparatorChar).Replace('\\', Path.DirectorySeparatorChar));
+                if (File.Exists(texturePath))
+                    textures[i] = LoadTextureDXT(texturePath);
                 else
                 {
-                    Debug.LogWarning($"Could not find {Globals.GetTexturePath()}\\{name}");
+                    Debug.LogWarning($"Could not find {texturePath}");
 
                     Texture2D texture = new Texture2D(512, 512);
 
