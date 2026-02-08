@@ -1,0 +1,6 @@
+# Paths to external tools and Wine prefix. Copy this file to tools.conf and fill in your paths.
+WINEPREFIX="/path/to/wineprefix"
+GAME_DIR="/path/to/Steam/steamapps/common/MGS_TPP"
+FILEMONOLITH_DIR="/path/to/FileMonolith.win-x64"
+FTEXTOOL="/path/to/FtexTool.exe"
+SNAKEBITE_DIR="$WINEPREFIX/drive_c/users/$USER/AppData/Local/SnakeBite"

@@ -1,3 +1,9 @@
+mod/mod.mgsv
+linux/tools.conf
+linux/logs/
+*_dictionary.txt
+mod_qar_dict.txt
+
 # OS junk
 .DS_Store
 Thumbs.db
