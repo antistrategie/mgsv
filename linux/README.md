@@ -1,6 +1,6 @@
-# Linux Setup
+# Linux
 
-This guide covers running the MGSV modding tools on Linux through Wine.
+Tools and setup for Linux workflow.
 
 ## Wine Prefix
 
